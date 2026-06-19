@@ -1,0 +1,23 @@
+# Папки кэша и сохранений
+cache/
+saves/
+
+
+# Скомпилированные байт-коды (если есть)
+*.rpyb
+*.rpyc
+
+# Логи и отладочные файлы
+errors.txt
+log.txt
+traceback.txt
+
+# Файлы сборки (дистрибутивы)
+dist/
+tmp/
+build/
+renpy-*.json
+
+# Системные файлы
+.DS_Store
+Thumbs.db
