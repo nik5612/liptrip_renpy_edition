@@ -1,2 +1,5 @@
+*.mpgv filter=lfs diff=lfs merge=lfs -text
+*.ogg filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
 videos/liptrip_ed_en.mpgv filter=lfs diff=lfs merge=lfs -text
 videos/liptrip_op_en.mpgv filter=lfs diff=lfs merge=lfs -text
