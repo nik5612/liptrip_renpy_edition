@@ -290,33 +290,51 @@ label start:
     
     "My voice comes out strangled and hoarse. My breath stutters."
 
-    voice "voiсes/file_0000.ogg"
+    voice "audio/voiсes/file_0000.ogg"
     chizu "Are you Ms. Maiguma?"
 
+    #voice "voices/file_!!!!.ogg"
     rino "Yes! It's my first day, and..."
+
     #pink effect on
     "And what...? My thoughts melt away as my vision swims."
     "My cheeks are hot—not just my cheeks, my whole body. I can barely breathe. An ache spreads through my stomach, and the form of the women before me wavers."
     #pink effect off
+
+    #voice "voices/file_!!!!.ogg"
     chizu "Don't tell me you're in heat..."
+
     "That's not possible... As the strength sags from my body, my boss leans out of the car."
     "Slim fingers curl over my hand on the umbrella, which falls from my grip as the woman supports me."
+
+    #voice "voices/file_!!!!.ogg"
     rino "No. No, I can't be."
+
+    #voice "voices/file_!!!!.ogg"
     rino "Just because I'm an Omega, that doesn't..."
+
     "I swallow again and again, holding back the moans that threaten to spill from my lips."
     "How could I go into heat now of all times?!"
     
     
     
     
-    
+    #voice "voices/file_!!!!.ogg"
     rino "(It's not possible!)"
+
     "Omegas periodically go through a phase called 'heat' where we're unable to control our sexual impulses."
     "During that time, we're in a constant state of arousal, our thoughts consumed by sexual urges... Just like how I'm feeling right now."
+
+    #voice "voices/file_!!!!.ogg"
     rino "(I have to get away... She's an Alpha!)"
+
     "Holding the umbrella over us, my boss regards me with a frown. There's a fire in her eyes that calls to me."
+
+    #voice "voices/file_!!!!.ogg"
     rino "(If I stay here, she'll claim me...)"
     "There's a fire in my belly and a flush creeping up my neck. Trying to fight against my instincts, I put my hand to my neck, my nails digging into the skin."
+
+    #voice "voices/file_!!!!.ogg"
     chizu "Yes. Yes, my apologies. Please don't worry about it."
     
     
@@ -324,27 +342,50 @@ label start:
     
     
     "I vaguely hear her talking with the taxi driver as I lean against the taller woman, who has an arm wrapped around my shoulders."
+
+    #voice "voices/file_!!!!.ogg"
     chizu "Oof. Can you walk?"
+
     "Her voice reverberates by my ear as her cool fingers curl around my shoulder."
+
+    #voice "voices/file_!!!!.ogg"
     rino "Ah... No... Don't bite me."
+
     "My voice is hoarse."
     "My boss purses her lips slightly then removes her arm from my shoulder, instead taking hold of my clammy, dangling hand."
+
+    #voice "voices/file_!!!!.ogg"
     chizu "At the very least, we need to get you somewhere private."
+
+    #voice "voices/file_!!!!.ogg"
     rino "Haah... Ah."
+
     "A scent of sweet honey and refreshing mint wafts over me, growing stronger as I lean in toward it."
+
+    #voice "voices/file_!!!!.ogg"
     chizu "Do you have your suppressant?"
+
+    #voice "voices/file_!!!!.ogg"
     rino "Ah... Yes."
+
     "Over her shoulder, I can see other people around us, and their gazes make me shiver."
+
+    #voice "voices/file_!!!!.ogg"
     rino "(I can't believe it. I'm really in heat right now.)"
+
     "I must be giving off Alpha-attracting pheromones. Just the thought of a passing Alpha forcefully claiming me makes my chest blaze uncomfortably."
     
     
     
     
-    
+    #voice "voices/file_!!!!.ogg"
     woman "Oh, and we have a lot of female Alphas across the company, so... make sure you behave yourself."
+
     "Those words from earlier come back to me. I bite down on my tongue, fighting desperately to stay in control, and grimace at the dull pain."
+
+    #voice "voices/file_!!!!.ogg"
     rino "(I need to take that pill, stat!)"
+
     "Pushing her away, I grab the pass holder hanging around my neck and frantically pull out a pill."
     
     
@@ -352,11 +393,19 @@ label start:
     
     
     "I toss it into my mouth and swallow. Once the bitter taste passes, I sigh."
+
+    #voice "voices/file_!!!!.ogg"
     rino "No way..."
+
     "Usually, my symptoms would lesson within seconds of taking the medicine, and my heat would subside a few minutes later. But this time, my heart continues to pound."
     "The miracle medicine we Omegas rely on to suppress our heat... isn't working."
+
+    #voice "voices/file_!!!!.ogg"
     rino "(What am I gonna do...?)"
+
+    #voice "voices/file_!!!!.ogg"
     chizu "Come here."
+
     "Her voice quivers as she takes me by my trembling hand. I'm powerless to resist, unable to do anything but moan at the feel of her cool fingers on mine."
     
     
@@ -366,11 +415,19 @@ label start:
     "When we reach the elevator, my boss folds up the umbrella and slams the button for going up."
     "As soon as it arrives, she hustles me inside."
     "The second the door closes, she turns to me. Her gaze is heated; her fingers on mine are cool. She hasn't pressed a floor button."
+
+    #voice "voices/file_!!!!.ogg"
     chizu "I'll contact the building security office."
+
     "When she makes to leave the elevator, my body moves automatically."
+
+    #voice "voices/file_!!!!.ogg"
     chizu "Ngh... What?"
+
     "I wrap my arms around her neck and lean back against the wall, pulling her into me."
     "There's confusion in her eyes, and I grit my teeth. My head is spinning from her Alpha scent as I fight to think clearly."
+
+    #voice "voices/file_!!!!.ogg"
     rino "(I can't believe I can't suppress my heat. This is crazy.)"
     
     
@@ -378,26 +435,56 @@ label start:
     
     
     #h scene 1
+
+    #voice "voices/file_!!!!.ogg"
     rino "No..."
+
     "My hoarse voice echoes around the elevator. My boss's eyes widen in surprise, but she stays silent, listening to me intently."
+
+    #voice "voices/file_!!!!.ogg"
     rino "It'll just confirm what they already think, that Omegas are useless... Haah."
+
     "I feel something rising in my burning belly. I hate how my body is reacting to nothing at all."
+
+    #voice "voices/file_!!!!.ogg"
     rino "(This is my dream job... How can this be happening on my very first day?!)"
+
     "My body is burning up, my chest is tight, and tears slide down my cheeks. Yet I still plead fervently with my boss."
+
+    #voice "voices/file_!!!!.ogg"
     rino "So please, ah, don't tell the company."
+
+    #voice "voices/file_!!!!.ogg"
     chizu "That's not..."
+
     "Her voice is small and trembling, unlike what I'd expect from an Alpha. The lack of conviction in her tone makes me swallow."
+
+    #voice "voices/file_!!!!.ogg"
     rino "You're an Alpha, aren't you?"
+
     "Being an Alpha means she could sink her teeth into my neck to claim me. Once claimed, an Omega won't come into heat for anyone but the Alpha who claimed them."
     "But that also means never being able to choose another partner."
+
+    #voice "voices/file_!!!!.ogg"
     rino "(If she bites me, this will all stop.)"
+
     "My tears fall as I wrap my arms around the taller woman. Her eyes widen, her trembling lashes casting shadows over her irises."
+
+    #voice "voices/file_!!!!.ogg"
     chizu "Mmph, haah..."
+
+    #voice "voices/file_!!!!.ogg"
     rino "Haahm... So hot... It's too much..."
+
     "Panting, I pin her pale eyes with mine."
     "My head aches, and my thoughts are in chaos. My lungs feel like they're about to burst, and my heart pounds like it's going to leap out of my chest."
+
+    #voice "voices/file_!!!!.ogg"
     chizu "Haah."
+
+    #voice "voices/file_!!!!.ogg"
     rino "Aah... Please..."
+
     "Her eyes give me no clue to her emotions, but she lets out a pained sigh. Then she pushes me against the wall."
     
     
