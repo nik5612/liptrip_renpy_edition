@@ -4,26 +4,6 @@
 ## раскомментировать. Строки, начинающиеся с одной '#' — комментированный код,
 ## который вы можете раскомментировать, если посчитаете это нужным.
 
-init python:
-    renpy.music.register_channel(
-        "chizu_voice",      # Название канала
-        mixer="chizu_voice", # Название микшера (для бара)
-        loop=False, 
-        stop_on_mute=True, 
-        tight=True, 
-        file_prefix='', 
-        file_suffix=''
-    )
-
-    renpy.music.register_channel(
-        "rino_voice",      # Название канала
-        mixer="rino_voice", # Название микшера (для бара)
-        loop=False, 
-        stop_on_mute=True, 
-        tight=True, 
-        file_prefix='', 
-        file_suffix=''
-    )
 ## Основное ####################################################################
 
 ## Читаемое название игры. Используется при установке стандартного заголовка
@@ -42,7 +22,7 @@ define gui.show_name = True
 
 ## Версия игры.
 
-define config.version = "1.0"
+define config.version = "0.0.2"
 
 
 ## Текст, помещённый в экран "Об игре". Поместите текст между тройными скобками.
@@ -75,15 +55,16 @@ define config.has_voice = True
 
 # define config.sample_sound = "sample-sound.ogg"
 # define config.sample_voice = "voiсes/file_0000.ogg"
-define sample_chizu_voice = "voiсes/file_0000.ogg"
-define sample_rino_voice = "voiсes/file_0289.ogg"
+
+define sample_chizu_voice = "audio/voiсes/file_0000.ogg"
+define sample_rino_voice = "audio/voiсes/rino_file_0289.ogg"
 
 
 ## Раскомментируйте следующую строчку, чтобы настроить аудиофайл, который будет
 ## проигрываться в главном меню. Этот файл продолжит проигрываться во время
 ## игры, если не будет остановлен, или не начнёт проигрываться другой аудиофайл.
 
-define config.main_menu_music = "music/file_0000.ogg"
+define config.main_menu_music = "audio/music/file_0000.ogg"
 
 
 ## Переходы ####################################################################

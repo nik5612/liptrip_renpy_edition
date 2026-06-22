@@ -1,5 +1,6 @@
-﻿define chizu = Character('Chizu', color="#c8ffc8", voice_tag="chizu")
+﻿define narrator = Character(None, voice_tag="rino")
 define rino = Character('Rino', color="#c8ffc8", image="rino", voice_tag="rino")
+define chizu = Character('Chizu', color="#c8ffc8", voice_tag="chizu")
 define woman = Character('Woman', color="#c8ffc8", voice_tag="others")
 define yame = Character('Yame', color="#c8ffc8", voice_tag="others")
 define honami = Character('Honami', color="#c8ffc8", voice_tag="others")
@@ -10,58 +11,92 @@ define colleague = Character('Colleague', color="#c8ffc8", voice_tag="others")
 define noboribe = Character('Noboribe', color="#c8ffc8", voice_tag="others")
 
 
-
 image side rino test = "images/heads/file_0132.cbg.png"
 
+
+image bg white = "images/bgs/file_0000.cbg.png"
 
 define patch = False
 
 label start:
+    stop sound
+
+    play music "audio/music/file_0008.ogg"
+
+    scene bg white
+    with fade
+    # белый экран
+    # dissolve в розовые галюны
+                
+    voice "audio/voiсes/rino_file_0247.ogg"
     "My breath huffs out in uneven puffs."
+
+    voice "audio/voiсes/rino_file_0248.ogg"
     "My pulse pounds and my head buzzes unpleasantly."
 
-    #voice "voices/file_!!!!.ogg"
+    voice "audio/voiсes/rino_file_0249.ogg"
     rino test "...Haah, mm... Ngh."
 
+    voice "audio/voiсes/rino_file_0250.ogg"
     "The rough pants escaping my lips are at odds with the clinical office space."
 
-    #voice "voices/file_!!!!.ogg"
+    voice "audio/voiсes/rino_file_0251.ogg"
     rino "Haah... Haah..."
 
+    voice "audio/voiсes/rino_file_0252.ogg"
     "I desperately clutch the folder to my chest as I stagger toward the wall. I shudder, and the papers scatter to the floor."
+
+    play sound "audio/sounds/file_0000.ogg"
     "*rustle*"
+
+    voice "audio/voiсes/rino_file_0253.ogg"
     "The sound of scattering paper and plastic reverberates in my ears. I dimly register the words on the meeting documents, crumpled by my sweaty hands."
 
-    #voice "voices/file_!!!!.ogg"
+    voice "audio/voiсes/rino_file_0254.ogg"
     rino "Haah, nngh... Haah."
-    #voice "voices/file_!!!!.ogg"
+
+    voice "audio/voiсes/rino_file_0255.ogg"
     "I tense my legs, fighting back syrupy moans."
+
+    voice "audio/voiсes/rino_file_0256.ogg"
     "Heat pools in my stomach. My fingertips slide up my thighs."
 
-    #voice "voices/file_!!!!.ogg"
+    # тряска влево-вправо
+    voice "audio/voiсes/rino_file_0257.ogg"
     rino "Ngh... Huh?"
 
+    voice "audio/voiсes/rino_file_0258.ogg"
     "Just then, I catch a whiff of a fragrance like mint mojito.  I barely have time to take a breath before there are cool fingers on mine."
+    
+    voice "audio/voiсes/rino_file_0259.ogg"
     "Before I know it, I'm pressed up against the wall. The scent is so strong. Pleasure permeates my brain."
 
-    #voice "voices/file_!!!!.ogg"
+    voice "audio/voiсes/rino_file_0260.ogg"
     rino "...Boss?"
     
+    voice "audio/voiсes/rino_file_0261.ogg"
     "As though in response to my syrupy moan, the fingertips heat up Her intense gaze shimmers like glittering sapphires."
+    
+    voice "audio/voiсes/rino_file_0262.ogg"
     "I swallow my moans as I give myself up to her."
     
+    #dissolve in white
+    #dissolve on black
     
     $ renpy.movie_cutscene("videos/liptrip_op_en.mpgv")
     
-    
-    #voice "voices/file_!!!!.ogg"
+    show wide_bg at pan_right_stop
+
+    play music "audio/music/file_0005.ogg"
+
+    voice "audio/voiсes/rino_file_0263.ogg"
     rino "Whoa! This place is so fancy!"
 
     "Looking out from the glass-enclosed meeting room, the neat rows of desks and gleaming monitors are like something out of a TV show."
     "The workers are all dressed in a way that's somehow simultaneously casual and sophisticated."
     "Artfully placed decorative plants spread their lush leaves under the white lights."
 
-    #voice "voices/file_!!!!.ogg"
+    voice "audio/voiсes/rino_file_0264.ogg"
     rino "(So this is city life, huh?)"
 
     "It's a far cry from my previous workplace."
@@ -77,7 +112,7 @@ label start:
     "Setting my lips, painted in my favorite coral pink lipstick, in a determined line, I get to my feet."
     "Taking a deep breath, I give a little nod to psych myself up."
 
-    #voice "voices/file_!!!!.ogg"
+    voice "audio/voiсes/rino_file_0265.ogg"
     rino "Okay!"
 
     #voice "voices/file_!!!!.ogg"
@@ -91,18 +126,18 @@ label start:
     "While making appropriate noises to show that I'm listening, I glance around me."
     "New employees must be a regular occurrence, as no one pays me any heed, everyone focused on the work before them."
 
-    #voice "voices/file_!!!!.ogg"
+    voice "audio/voiсes/rino_file_0266.ogg"
     rino "(I guess the people who work at such a prestigious company wouldn't spare much thought for me.)"
 
     "Blinking my curled lashes, I keep a firm grip on the documentation I've been given. Feeling a little more grounded, I look around again."
 
-    #voice "voices/file_!!!!.ogg"
+    voice "audio/voiсes/rino_file_0267.ogg"
     rino "(I remember that slogan from commercials when I was a kid!)"
 
     "There's a wooden bookshelf filled with popular travel magazines, and familiar posters adorn the wall above them."
     "Excitement brings a smile to my lips, and I unconsciously step toward the display."
 
-    #voice "voices/file_!!!!.ogg"
+    voice "audio/voiсes/rino_file_0268.ogg"
     rino "(What am I doing?! I'm supposed to be listening!)"
 
     #voice "voices/file_!!!!.ogg"
@@ -110,13 +145,13 @@ label start:
 
     "Ms. Sasahara pushes back her short hair and eyes me up. I interviewed with someone else, but she's probably heard my work history from them."
 
-    #voice "voices/file_!!!!.ogg"
+    voice "audio/voiсes/rino_file_0269.ogg"
     rino "Uh, yes! Though I've always wanted to work in the travel industry."
 
     #voice "voices/file_!!!!.ogg"
     woman "Really? Well, the digital media department is desk work, so it won't be as challenging as working on location."
 
-    #voice "voices/file_!!!!.ogg"
+    voice "audio/voiсes/rino_file_0270.ogg"
     rino "O-Oh."
 
     "The brand-new digital media division at one of Japan's leading travel agencies is staffed by an elite few."
@@ -290,7 +325,7 @@ label start:
     
     "My voice comes out strangled and hoarse. My breath stutters."
 
-    voice "audio/voiсes/file_0000.ogg"
+    #voice "audio/voiсes/rino_file_0000.ogg"
     chizu "Are you Ms. Maiguma?"
 
     #voice "voices/file_!!!!.ogg"

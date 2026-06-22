@@ -416,69 +416,64 @@ style main_menu_version:
 ## экран предназначен для использования с одним или несколькими дочерними
 ## элементами, которые трансклюдируются (помещаются) внутрь него.
 
-screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
+screen game_menu(title, scroll=None, yinitial=0.0, spacing=0, bg=None):
 
     style_prefix "game_menu"
 
-    if main_menu:
+    if bg is not None:
+        # 1. Фон главного меню
+        add gui.main_menu_background
+        # 2. Оверлей главного меню (панель)
+        frame:
+            style "main_menu_frame"
+        # 3. Ваш кастомный фон
+        add bg
+    elif main_menu:
         add gui.main_menu_background
     else:
         add gui.game_menu_background
 
+    # Внешний фрейм – прозрачный для кастомных фонов,
+    # иначе стандартный оверлей игрового меню
     frame:
-        style "game_menu_outer_frame"
+        if bg is not None:
+            background None
+        else:
+            style "game_menu_outer_frame"
 
-        hbox:
+        # Фрейм для содержимого
+        frame:
+            style "game_menu_content_frame"
 
-            ## Резервирует пространство для навигации.
-            frame:
-                style "game_menu_navigation_frame"
-
-            frame:
-                style "game_menu_content_frame"
-
-                if scroll == "viewport":
-
-                    viewport:
-                        yinitial yinitial
-                        scrollbars "vertical"
-                        mousewheel True
-                        draggable True
-                        pagekeys True
-
-                        side_yfill True
-
-                        vbox:
-                            spacing spacing
-
-                            transclude
-
-                elif scroll == "vpgrid":
-
-                    vpgrid:
-                        cols 1
-                        yinitial yinitial
-
-                        scrollbars "vertical"
-                        mousewheel True
-                        draggable True
-                        pagekeys True
-
-                        side_yfill True
-
+            if scroll == "viewport":
+                viewport:
+                    yinitial yinitial
+                    scrollbars "vertical"
+                    mousewheel True
+                    draggable True
+                    pagekeys True
+                    side_yfill True
+                    vbox:
                         spacing spacing
-
                         transclude
-
-                else:
-
+            elif scroll == "vpgrid":
+                vpgrid:
+                    cols 1
+                    yinitial yinitial
+                    scrollbars "vertical"
+                    mousewheel True
+                    draggable True
+                    pagekeys True
+                    side_yfill True
+                    spacing spacing
                     transclude
+            else:
+                transclude
 
-    use navigation
+    # use navigation удалена – навигация только в главном меню
 
     textbutton _("Вернуться"):
         style "return_button"
-
         action Return()
 
     label title
@@ -733,7 +728,7 @@ screen preferences():
 
     tag menu
 
-    use game_menu(_("Настройки"), scroll="viewport"):
+    use game_menu(_("Настройки"), scroll="viewport", bg="gui/overlay/file_0034.dsc.png"):
 
         vbox:
 
@@ -776,52 +771,59 @@ screen preferences():
 
                 vbox:
 
-                    if config.has_music:
-                        label _("Громкость музыки")
-
-                        hbox:
-                            bar value Preference("music volume")
-
-                    if config.has_sound:
-
-                        label _("Громкость звуков")
-
-                        hbox:
-                            bar value Preference("sound volume")
-
-                            if config.sample_sound:
-                                textbutton _("Тест") action Play("sound", config.sample_sound)
+                    null height (4 * gui.pref_spacing)
+                    hbox:
+                        xalign 0.5
+                        textbutton _("Настройки звука") action ShowMenu("sound")
 
 
-                    if config.has_voice:
-                        label _("Громкость голоса Женщин")
+screen sound():
 
-                        hbox:
-                            bar value Preference("voice volume")
-                            #if config.sample_voice:
-                                #textbutton _("Тест") action Play("voice", config.sample_voice)
+    tag menu
 
+    use game_menu(_("Настройки звука"), scroll="viewport", bg="gui/overlay/file_0018.dsc.png"):
 
-                        label _("Громкость голоса Рино")
+        vbox:
+            style_prefix "slider"
 
-                        hbox:
-                            bar value MixerValue("rino_voice")
-                            textbutton _("Тест") action Play("rino_voice", sample_rino_voice)
+            if config.has_music:
+                label _("Громкость музыки")
+                hbox:
+                    bar value Preference("music volume")
 
-                        label _("Громкость голоса Чизу")
+            if config.has_sound:
+                label _("Громкость звуков")
+                hbox:
+                    bar value Preference("sound volume")
+                    if config.sample_sound:
+                        textbutton _("Тест") action Play("sound", config.sample_sound)
 
-                        hbox:
-                            bar value MixerValue("chizu_voice")
-                            textbutton _("Тест") action Play("chizu_voice", sample_chizu_voice)
+            if config.has_voice:
+                label _("Мастер Голоса")
+                hbox:
+                    bar value Preference("voice volume")
+                    textbutton _("Тест") action Play("voice", sample_rino_voice)
 
+                label _("Громкость голоса Чизу")
+                hbox:
+                    bar value SetCharacterVolume("chizu")
+                    textbutton _("Тест") action PlayCharacterVoice("chizu", sample_chizu_voice)
 
-                    if config.has_music or config.has_sound or config.has_voice:
-                        null height gui.pref_spacing
+                label _("Громкость голоса Рино")
+                hbox:
+                    bar value SetCharacterVolume("rino")
+                    textbutton _("Тест") action PlayCharacterVoice("rino", sample_rino_voice)
 
-                        textbutton _("Без звука"):
-                            action Preference("all mute", "toggle")
-                            style "mute_all_button"
+                label _("Громкость голоса Женщин")
+                hbox:
+                    bar value SetCharacterVolume("others")
+                    textbutton _("Тест") action PlayCharacterVoice("others", sample_chizu_voice)
 
+            if config.has_music or config.has_sound or config.has_voice:
+                null height gui.pref_spacing
+                textbutton _("Без звука"):
+                    action Preference("all mute", "toggle")
+                    style "mute_all_button"
 
 style pref_label is gui_label
 style pref_label_text is gui_label_text
